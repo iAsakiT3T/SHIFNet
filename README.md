@@ -26,10 +26,10 @@ Set the -data_path parameter to correspond to these folders when training.
 ```conda create --name SHIFNet python=3.12.3```
 ```conda activate SHIFNet```
 
-2) Install SAM2
+3) Install SAM2
 Please install SAM2 following the official documentation.
 
-3) Install Required Dependencies
+4) Install Required Dependencies
 ```pip install tensorboardX matplotlib einops monai tabulate fvcore opencv-python addict yapf rich```
 ```pip install scikit-learn simple_parsing requests```
 ```pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.4/index.html```
