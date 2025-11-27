@@ -8,7 +8,9 @@ SHIFNet is an innovative SAM2-driven Hybrid Interactive Fusion Paradigm designed
 
 ## Training
 # Dataset Preparation
+
 Ensure the dataset directory is structured as follows:
+```
 data/
 ├── FMB
 │   ├── train
@@ -16,6 +18,7 @@ data/
 └── PST900
     ├── train
     └── test
+```
 Set the -data_path parameter to correspond to these folders when training.
 # Environment Setup
 1) Create Conda Environment
