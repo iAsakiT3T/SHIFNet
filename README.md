@@ -21,17 +21,18 @@ data/
 ```
 Set the -data_path parameter to correspond to these folders when training.
 # Environment Setup
+
 1) Create Conda Environment
-conda create --name SHIFNet python=3.12.3
-conda activate SHIFNet
+```conda create --name SHIFNet python=3.12.3```
+```conda activate SHIFNet```
 
 2) Install SAM2
 Please install SAM2 following the official documentation.
 
 3) Install Required Dependencies
-pip install tensorboardX matplotlib einops monai tabulate fvcore opencv-python addict yapf rich
-pip install scikit-learn simple_parsing requests
-pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.4/index.html
+```pip install tensorboardX matplotlib einops monai tabulate fvcore opencv-python addict yapf rich```
+```pip install scikit-learn simple_parsing requests```
+```pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.4/index.html```
 
 4.Category Embedding
 | Method              | Description                                               |
@@ -40,6 +41,7 @@ pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2
 | Provided Embeddings | Use our precomputed vectors (recommended for quick start) |
 
 5.Example command for single-GPU training:
+```
 python -m torch.distributed.launch --nproc_per_node=1 --use_env --master_port=30000 multigpu_train.py \
     -ms l \
     -dataset fmb \
@@ -50,7 +52,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --use_env --master_port=30
     -lr 1e-4 \
     -ddp True \
     -label_path data/FMB/fmb_class_embedding.pt
-
+```
 6.Pretrained Weights & Embeddings
 | Resource                          | Download                                                                                                             |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -58,7 +60,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --use_env --master_port=30
 | Text Embeddings (.pt)             | Included in download package                                                                                         |
 
 # Visualization
-python vis.py
+```python vis.py```
 Example visualization output on FMB dataset:
 <p align="center"> <img src="assets/vis.png" width="600"> <br> <em>Visualization examples on the FMB dataset</em> </p>
 
