@@ -24,8 +24,9 @@ Set the -data_path parameter to correspond to these folders when training.
 
 1) Create Conda Environment
 ```bash
-```conda create --name SHIFNet python=3.12.3```
-```conda activate SHIFNet```
+conda create --name SHIFNet python=3.12.3
+```bash
+conda activate SHIFNet
 
 3) Install SAM2
 Please install SAM2 following the official documentation.
