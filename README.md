@@ -10,6 +10,7 @@ SHIFNet is an innovative SAM2-driven Hybrid Interactive Fusion Paradigm designed
 # Dataset Preparation
 Ensure the dataset directory is structured as follows:
 data
+
 ├── FMB
 │   ├── train
 │   └── test
