@@ -60,7 +60,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --use_env --master_port=30
 | Text Embeddings (.pt)             | Included in download package                                                                                         |
 
 # Visualization
-```python vis.py```
+```python vis.py```  
 Example visualization output on FMB dataset:
 <p align="center"> <img src="assets/vis.png" width="600"> <br> <em>Visualization examples on the FMB dataset</em> </p>
 
